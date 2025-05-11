@@ -1,5 +1,5 @@
 <?php
-require 'db_connect.php';
+require './includes/db_connect.php';
 $result = $conn->query("SELECT id, name, price FROM products");
 ?>
 <!DOCTYPE html>
@@ -8,18 +8,18 @@ $result = $conn->query("SELECT id, name, price FROM products");
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="assets/normalize.css" />
-		<link rel="stylesheet" href="assets\products.css" />
-		<link rel="stylesheet" href="assets\header.css" />
+		<link rel="stylesheet" href="./assets/css/normalize.css" />
+		<link rel="stylesheet" href="./assets/css/products.css" />
+		<link rel="stylesheet" href="./assets/css/header.css" />
 
 		<!-- Font Awesome -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
-		<link rel="stylesheet" href="css/all.min.css" />
+		<link rel="stylesheet" href="./assets/css/all.min.css" />
         <!-- Google Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&#038;display=swap" rel="stylesheet" />
-    	<link rel="icon" href="imgs/Nav-logo.png" type="image/x-icon">
+    	<link rel="icon" href="./assets/imgs/Nav-logo.png" type="image/x-icon">
         <title>Products</title>
         <style>
         :root {
@@ -157,21 +157,21 @@ $result = $conn->query("SELECT id, name, price FROM products");
 		<header>
 			<div class="container">
 				<a href="#">
-					<img src="imgs/Nav-logo.png" alt="logo" />
+					<img src="./assets/imgs/Nav-logo.png" alt="logo" />
 				</a>
                 <pc class="header-logo">Hend Abdelfattah</pc>
 				<nav>
 					<i class="fas fa-bars toggle"></i>
 					<ul>
-						<li><a target="_blank" class="active" href="index.html">Home</a></li>
-						<li><a target="_blank" href="Products.html">Products</a>
-						<li><a target="_blank" href="contact-us.html">Contact Us</a></li>
-						<li><a target="_blank" href="news-letter.html">News-letter</a></li>
-						<li><a target="_blank" href="advice.html">Advices</a></li>
-						<li><a target="_blank" href="login.html">Login</a></li>
-						<li><a target="_blank" href="change.html">Change Password</a></li>
-						<li><a target="_blank" href="register.html">Sign Up</a></li>
-						<li><a target="_blank" href="about-us.html">About Us</a></li>
+						<li><a target="_blank" class="active" href="./index.html">Home</a></li>
+						<li><a target="_blank" href="#">Products</a>
+						<li><a target="_blank" href="./pages/contact-us.html">Contact Us</a></li>
+						<li><a target="_blank" href="./pages/news-letter.html">News-letter</a></li>
+						<li><a target="_blank" href="./pages/advice.html">Advices</a></li>
+						<li><a target="_blank" href="./index.php">Login</a></li>
+						<li><a target="_blank" href="./pages/change.html">Change Password</a></li>
+						<li><a target="_blank" href="./index.php">Sign Up</a></li>
+						<li><a target="_blank" href="./pages/about-us.html">About Us</a></li>
 					</ul>
 					<div class="form">
 						<i class="fa-solid fa-magnifying-glass"></i>
@@ -194,7 +194,7 @@ $result = $conn->query("SELECT id, name, price FROM products");
             <!-- controlled-medicine -->
                 <div class="container">
                     <div id="controlled-medicine" class="box">
-                        <img src="imgs/trittico.jpg" alt="" />
+                        <img src="./assets/images/trittico.jpg" alt="" />
                         <div class="content">
                             <h3>Trittico 100 mg</h3>
                         </div>
@@ -204,7 +204,7 @@ $result = $conn->query("SELECT id, name, price FROM products");
                         </div>
                     </div>
                     <div class="box">
-                        <img src="imgs/xigduo.jpg" alt="" />
+                        <img src="./assets/images/xigduo.jpg" alt="" />
                         <div class="content">
                             <h3>Xigduo 5 mg/1000 mg</h3>
                         </div>
@@ -214,7 +214,7 @@ $result = $conn->query("SELECT id, name, price FROM products");
                         </div>
                     </div>
                     <div class="box">
-                        <img src="imgs/pantoloc.jpg" alt="" />
+                        <img src="./assets/images/pantoloc.jpg" alt="" />
                         <div class="content">
                             <h3>Pantoloc 20 mg</h3>
                         </div>
@@ -224,7 +224,7 @@ $result = $conn->query("SELECT id, name, price FROM products");
                         </div>
                     </div>
                     <div class="box">
-                        <img src="imgs/L-c.jpg" alt="" />
+                        <img src="./assets/images/L-c.jpg" alt="" />
                         <div class="content">
                             <h3>L-Carnitine</h3>
                         </div>
@@ -234,7 +234,7 @@ $result = $conn->query("SELECT id, name, price FROM products");
                         </div>
                     </div>
                     <div class="box">
-                        <img src="imgs/alzmenda.jpg" alt="" />
+                        <img src="./assets/images/alzmenda.jpg" alt="" />
                         <div class="content">
                             <h3>alzmenda</h3>
                         </div>
@@ -244,7 +244,7 @@ $result = $conn->query("SELECT id, name, price FROM products");
                         </div>
                     </div>
                     <div class="box">
-                        <img src="imgs/apex.jpg" alt="" />
+                        <img src="./assets/images/apex.jpg" alt="" />
                         <div class="content">
                             <h3>Apexidonea</h3>
                         </div>
@@ -254,7 +254,7 @@ $result = $conn->query("SELECT id, name, price FROM products");
                         </div>
                     </div>
                     <div class="box">
-                        <img src="imgs/nolvadex.jpg" alt="" />
+                        <img src="./assets/images/nolvadex.jpg" alt="" />
                         <div class="content">
                             <h3>Nolvadex</h3>
                         </div>
@@ -264,7 +264,7 @@ $result = $conn->query("SELECT id, name, price FROM products");
                         </div>
                     </div>
                     <div class="box">
-                        <img src="imgs/asmakast.jpg" alt="" />
+                        <img src="./assets/images/asmakast.jpg" alt="" />
                         <div class="content">
                             <h3>Asmakast</h3>
                         </div>
@@ -285,7 +285,7 @@ $result = $conn->query("SELECT id, name, price FROM products");
             <!-- cosmetics Start -->
                 <div class="container">
                     <div class="box">
-                                            <img src="imgs/cos-1.jpg" alt="" />
+                                            <img src="./assets/images/cos-1.jpg" alt="" />
                                             <div class="content">
                                                 <h3>Mascara BioNike
                                                 </h3>
@@ -296,7 +296,7 @@ $result = $conn->query("SELECT id, name, price FROM products");
                                             </div>
                     </div>
                     <div class="box">
-                                            <img src="imgs/cos-2.jpg" alt="" />
+                                            <img src="./assets/images/cos-2.jpg" alt="" />
                                             <div class="content">
                                                 <h3>Kohl BioNike </h3>
                                             </div>
@@ -306,7 +306,7 @@ $result = $conn->query("SELECT id, name, price FROM products");
                                             </div>
                     </div>
                     <div class="box">
-                                            <img src="imgs/cos-3.jpg" alt="" />
+                                            <img src="./assets/images/cos-3.jpg" alt="" />
                                             <div class="content">
                                                 <h3>lipGloss BioNike</h3>
                                             </div>
@@ -316,7 +316,7 @@ $result = $conn->query("SELECT id, name, price FROM products");
                                             </div>
                     </div>
                     <div class="box">
-                                            <img src="imgs/cos-4.jpg" alt="" />
+                                            <img src="./assets/images/cos-4.jpg" alt="" />
                                             <div class="content">
                                                 <h3>he Nordea Serum</h3>
                                             </div>
@@ -326,7 +326,7 @@ $result = $conn->query("SELECT id, name, price FROM products");
                                             </div>
                     </div>
                     <div class="box">
-                                            <img src="imgs/cos-5.jpg" alt="" />
+                                            <img src="./assets/images/cos-5.jpg" alt="" />
                                             <div class="content">
                                                 <h3>Eico Joya Nourishing Hair Conditioner</h3>
                                             </div>
@@ -336,7 +336,7 @@ $result = $conn->query("SELECT id, name, price FROM products");
                                             </div>
                     </div>
                     <div class="box">
-                                            <img src="imgs/cos-6.jpg" alt="" />
+                                            <img src="./assets/images/cos-6.jpg" alt="" />
                                             <div class="content">
                                                 <h3>Concealer Collagra</h3>
                                             </div>
@@ -346,7 +346,7 @@ $result = $conn->query("SELECT id, name, price FROM products");
                                             </div>
                     </div>
                     <div class="box">
-                                            <img src="imgs/cos-7.jpg" alt="" />
+                                            <img src="./assets/images/cos-7.jpg" alt="" />
                                             <div class="content">
                                                 <h3>Dago Shampoo</h3>
                                             </div>
@@ -356,7 +356,7 @@ $result = $conn->query("SELECT id, name, price FROM products");
                                             </div>
                     </div>
                     <div class="box">
-                                            <img src="imgs/cos-8.jpg" alt="" />
+                                            <img src="./assets/images/cos-8.jpg" alt="" />
                                             <div class="content">
                                                 <h3>Foundation Collagra
                                                 </h3>
@@ -378,7 +378,7 @@ $result = $conn->query("SELECT id, name, price FROM products");
             <!-- Regular medicine box Start -->
                 <div class="container">
                     <div class="box">
-                        <img src="imgs/malox plus.jpg" alt="" />
+                        <img src="./assets/images/malox plus.jpg" alt="" />
                         <div class="content">
                             <h3>Maalox Plus</h3>
                         </div>
@@ -388,7 +388,7 @@ $result = $conn->query("SELECT id, name, price FROM products");
                         </div>
                     </div>
                     <div class="box">
-                        <img src="imgs/brufen.jpg" alt="" />
+                        <img src="./assets/images/brufen.jpg" alt="" />
                         <div class="content">
                             <h3>Bruffen 600</h3>
                         </div>
@@ -398,7 +398,7 @@ $result = $conn->query("SELECT id, name, price FROM products");
                         </div>
                     </div>
                     <div class="box">
-                        <img src="imgs/strepsils.jpg" alt="" />
+                        <img src="./assets/images/strepsils.jpg" alt="" />
                         <div class="content">
                             <h3>Strepsils Orange</h3>
                         </div>
@@ -408,7 +408,7 @@ $result = $conn->query("SELECT id, name, price FROM products");
                         </div>
                     </div>
                     <div class="box">
-                        <img src="imgs/mixtrad.jpg" alt="" />
+                        <img src="./assets/images/mixtrad.jpg" alt="" />
                         <div class="content">
                             <h3>Mixtard 30</h3>
                         </div>
@@ -418,7 +418,7 @@ $result = $conn->query("SELECT id, name, price FROM products");
                         </div>
                     </div>
                     <div class="box">
-                        <img src="imgs/panadol.jpg" alt="" />
+                        <img src="./assets/images/panadol.jpg" alt="" />
                         <div class="content">
                             <h3>Panadol Extra</h3>
                         </div>
@@ -428,7 +428,7 @@ $result = $conn->query("SELECT id, name, price FROM products");
                         </div>
                     </div>
                     <div class="box">
-                        <img src="imgs/pas-c&f.jpg" alt="" />
+                        <img src="./assets/images/pas-c&f.jpg" alt="" />
                         <div class="content">
                             <h3>Panadol Cold & Flu</h3>
                         </div>
@@ -438,7 +438,7 @@ $result = $conn->query("SELECT id, name, price FROM products");
                         </div>
                     </div>
                     <div class="box">
-                        <img src="imgs/otrivin1.jpg" alt="" />
+                        <img src="./assets/images/otrivin1.jpg" alt="" />
                         <div class="content">
                             <h3>Otrivin (Adults)</h3>
                         </div>
@@ -448,7 +448,7 @@ $result = $conn->query("SELECT id, name, price FROM products");
                         </div>
                     </div>
                     <div class="box">
-                        <img src="imgs/otrivin2.jpg" alt="" />
+                        <img src="./assets/images/otrivin2.jpg" alt="" />
                         <div class="content">
                             <h3>Otrivin (children)</h3>
                         </div>
@@ -463,11 +463,11 @@ $result = $conn->query("SELECT id, name, price FROM products");
   
              <?php while ($row = $result->fetch_assoc()) {
             echo '<div class="box">';
-            echo '<img src="imgs/products_background.png" alt="' 
+            echo '<img src="./assets/images/products_background.png" alt="' 
                     . htmlspecialchars($row['name']) . '">';
             echo '<div class="content"><h3>' 
                     . htmlspecialchars($row['name']) . '</h3></div>';
-            echo '<div class="info"><a href="contact-us.html">' 
+            echo '<div class="info"><a href="./pages/contact-us.html">' 
                     . htmlspecialchars($row['price']) . ' EGP</a>';
             echo '<i class="fa-solid fa-cart-shopping"></i></div>';
             echo '</div>';
@@ -480,7 +480,7 @@ $result = $conn->query("SELECT id, name, price FROM products");
             <!-- FOOTER -->
             <footer>
                 <div class="container">
-                    <img src="imgs/Nav-logo.png" alt="logo" />
+                    <img src="./assets/images/Nav-logo.png" alt="logo" />
                     <p>we are 24/7 in business , keeping you safe  </p>
                     <div class="social-icons">
                         <i class="fab fa-facebook-f"></i>

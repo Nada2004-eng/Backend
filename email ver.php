@@ -1,5 +1,5 @@
 <?php
-require 'config.php';
+require './includes/db_connect.php';
 
 if (!isset($_GET['token'])) {
     die("No token provided");

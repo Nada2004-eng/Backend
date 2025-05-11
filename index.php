@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login/Signup Form</title>
-    <link rel="stylesheet" href="assets\logreg.css">
-    <link rel="icon" href="imgs\Nav-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/logreg.css">
+    <link rel="icon" href="assets/images/Nav-logo.png" type="image/x-icon">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
     <div class="container">
         <div class="form-box login">
-            <form action="handle_login.php" method="post">
+            <form action="includes/handle_login.php" method="post">
                 <h1>Login</h1>
                 <div class="input-box">
                     <input type="text" name="name" placeholder="Username" required>
@@ -38,7 +38,7 @@
         </div>
 
         <div class="form-box register">
-            <form action="handle_register.php" method="post">
+            <form action="includes/handle_register.php" method="post">
                 <h1>Registration</h1>
                 <div class="input-box">
                     <input type="text" name="name" placeholder="Username" required>
@@ -82,7 +82,7 @@
         </div>
     </div>
 
-    <script src="main.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
